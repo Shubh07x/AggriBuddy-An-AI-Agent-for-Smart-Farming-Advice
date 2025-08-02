@@ -1,8 +1,10 @@
-# 🌾 AggriBuddy – Smart Farming AI Agent
+# 🌾 AggriBuddy – AN AI AGENT FOR SMART FARMING ADVICE
+
 
 An AI-powered farming assistant designed to empower small and marginal farmers with real-time, localized, and personalized agricultural advice. Built using IBM Watsonx and Retrieval-Augmented Generation (RAG), this agent bridges the digital gap for farmers by offering support in regional languages for crop guidance, mandi prices, pest alerts, and more.
 
 ---
+![](farmai.png)
 
 ## 🧩 Problem Statement
 
@@ -77,8 +79,24 @@ AggriBuddy is an AI agent trained using IBM Watsonx.ai that delivers real-time, 
 4. Agent responds in simple language, optionally in local dialect
 
 ---
-📸 Screenshots
-Setting Up the Agent `msetting up.png`
+## 📸 Screenshots
+## Setting Up the Agent 
+![Setting Up the Agent](msetting%20up.png)
+
+## Agent Instructions  
+![Agent Instructions](agent_instruction.png)
+
+## Tools used & Testing  
+![Tools used & Testing](otool_testing.png)
+
+## Deployment & Preview  
+![Deployment & Preview](Deployment_preview.png)
+
+## API References after Deployment  
+![API References after Deployment](API.png)
+
+## Resources List  
+![Resources List](resource_list.png)
 
 ## 📌 How to Run / Deploy
 
@@ -123,8 +141,8 @@ This project is licensed under the **MIT License**.
 **Shubham Dattatray Potdar**  
 D. Y. Patil College of Engineering and Technology, Kolhapur  
 Department: Computer Science and Engineering  
-LinkedIn: [Connect with Me](#)
+LinkedIn: [Connect with Me](https://www.linkedin.com/in/shubhampotdar07x)
 
 ---
 
-> Created with 💙 during the IBM SkillsBuild for Academia Internship 2025  
+> Created with 💙 during the IBM SkillsBuild for Academic Internship 2025  
