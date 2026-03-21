@@ -85,7 +85,8 @@ Farmer asks a question (Hindi / Marathi / English)
 ---
 
 ## 📸 Screenshots
-
+### Resources
+![Resource list](resource_list.png)
 ### Tools & Testing
 ![Tools Testing](otool_testing.png)
 
