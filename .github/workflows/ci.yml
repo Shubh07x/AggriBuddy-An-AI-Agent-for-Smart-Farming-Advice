@@ -38,7 +38,7 @@ jobs:
 
       - name: Check required files exist
         run: |
-          echo "✅ Checking agent.py"       && test -f agent.py
-          echo "✅ Checking rag_pipeline.py" && test -f rag_pipeline.py
+          echo "✅ Checking agent.py"        && test -f agent.py
+          echo "✅ Checking rag_pipeline.py"  && test -f rag_pipeline.py
           echo "✅ Checking requirements.txt" && test -f requirements.txt
-          echo "✅ Checking README.md"        && test -f README.md
+          echo "✅ Checking README.md"         && test -f README.md
