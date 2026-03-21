@@ -1,12 +1,13 @@
 <div align="center">
 
-# 🌾 AgriBuddy
+# 🌾 AggriBuddy
 ### An AI Agent for Smart Farming Advice
 
 **AI-powered farming assistant using IBM Watsonx + RAG that delivers real-time, localized crop advice, pest alerts & mandi prices in regional languages — built for India's 100 million small & marginal farmers.**
 
 <br/>
 
+[![CI](https://github.com/Shubh07x/AggriBuddy-An-AI-Agent-for-Smart-Farming-Advice/actions/workflows/ci.yml/badge.svg)](https://github.com/Shubh07x/AggriBuddy-An-AI-Agent-for-Smart-Farming-Advice/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![IBM Watsonx](https://img.shields.io/badge/IBM_Watsonx-AI-052FAD?style=for-the-badge&logo=ibm&logoColor=white)](https://www.ibm.com/products/watsonx)
 [![RAG](https://img.shields.io/badge/RAG-Powered-1DB954?style=for-the-badge)](https://github.com/Shubh07x/AggriBuddy-An-AI-Agent-for-Smart-Farming-Advice)
@@ -21,9 +22,9 @@
 
 ---
 
-## 🚀 What is AgriBuddy?
+## 🚀 What is AggriBuddy?
 
-> **AgriBuddy** is an AI agent built on **IBM Watsonx.ai** and **Retrieval-Augmented Generation (RAG)** that answers real farming questions in simple, regional language — so a farmer in Kolhapur can ask *"Which crop should I grow in August?"* and get a grounded, trusted answer instantly.
+> **AggriBuddy** is an AI agent built on **IBM Watsonx.ai** and **Retrieval-Augmented Generation (RAG)** that answers real farming questions in simple, regional language — so a farmer in Kolhapur can ask *"Which crop should I grow in August?"* and get a grounded, trusted answer instantly.
 
 Most farming apps are built for smartphones and English speakers. AggriBuddy is built for **real farmers** — vernacular support, trusted document-grounded answers, and zero hallucination.
 
@@ -85,8 +86,7 @@ Farmer asks a question (Hindi / Marathi / English)
 ---
 
 ## 📸 Screenshots
-### Resources
-![Resource list](resource_list.png)
+
 ### Tools & Testing
 ![Tools Testing](otool_testing.png)
 
@@ -95,6 +95,9 @@ Farmer asks a question (Hindi / Marathi / English)
 
 ### API References
 ![API](API.png)
+
+### Resources List
+![Resource list](resource_list.png)
 
 ### Setting Up the Agent
 ![Setting Up](msetting%20up.png)
@@ -165,19 +168,17 @@ IBM_CLOUD_URL=https://us-south.ml.cloud.ibm.com
 
 ```
 AggriBuddy/
-├── AggriBuddy_Standard_Notebook.ipynb   # Main AI agent notebook
+├── agent.py                             # Main AI agent
+├── rag_pipeline.py                      # RAG + Vector Index logic
+├── test_agent.py                        # Unit tests (pytest)
+├── requirements.txt                     # Python dependencies
+├── .env.example                         # Environment variables template
+├── .github/workflows/ci.yml             # GitHub Actions CI
+├── AggriBuddy_Standard_Notebook.ipynb   # Original IBM Watsonx notebook
 ├── assets/                              # UI assets
 ├── assettypes/                          # Asset type configs
 ├── project.json                         # Project configuration
-├── requirements.txt                     # Python dependencies
-├── README.md                            # You are here
-└── screenshots/
-    ├── farmai.png
-    ├── Deployment_preview.png
-    ├── agent_instruction.png
-    ├── otool_testing.png
-    ├── API.png
-    └── resource_list.png
+└── README.md                            # You are here
 ```
 
 ---
