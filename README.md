@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌾 AggriBuddy
+# 🌾 AgriBuddy
 ### An AI Agent for Smart Farming Advice
 
 **AI-powered farming assistant using IBM Watsonx + RAG that delivers real-time, localized crop advice, pest alerts & mandi prices in regional languages — built for India's 100 million small & marginal farmers.**
@@ -21,9 +21,9 @@
 
 ---
 
-## 🚀 What is AggriBuddy?
+## 🚀 What is AgriBuddy?
 
-> **AggriBuddy** is an AI agent built on **IBM Watsonx.ai** and **Retrieval-Augmented Generation (RAG)** that answers real farming questions in simple, regional language — so a farmer in Kolhapur can ask *"Which crop should I grow in August?"* and get a grounded, trusted answer instantly.
+> **AgriBuddy** is an AI agent built on **IBM Watsonx.ai** and **Retrieval-Augmented Generation (RAG)** that answers real farming questions in simple, regional language — so a farmer in Kolhapur can ask *"Which crop should I grow in August?"* and get a grounded, trusted answer instantly.
 
 Most farming apps are built for smartphones and English speakers. AggriBuddy is built for **real farmers** — vernacular support, trusted document-grounded answers, and zero hallucination.
 
