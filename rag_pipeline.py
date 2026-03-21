@@ -6,7 +6,7 @@ Author: Shubham Dattatray Potdar
 
 import os
 from dotenv import load_dotenv
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
@@ -34,7 +34,6 @@ class RAGPipeline:
                 persist_directory=VECTOR_DIR,
                 embedding_function=self.embeddings
             )
-
         print("🔨 Building vectorstore from documents...")
         return self._build_vectorstore()
 
@@ -43,24 +42,21 @@ class RAGPipeline:
         if not os.path.exists(DOCS_DIR):
             os.makedirs(DOCS_DIR)
             print(f"📁 Created docs folder at '{DOCS_DIR}'. Add your agricultural PDFs there.")
-            # Return empty store if no docs yet
             return Chroma(
                 persist_directory=VECTOR_DIR,
                 embedding_function=self.embeddings
             )
 
-        # Load all PDFs from docs folder
         loader = DirectoryLoader(DOCS_DIR, glob="**/*.pdf", loader_cls=PyPDFLoader)
         documents = loader.load()
 
         if not documents:
-            print("⚠️  No PDFs found in docs/ folder. Add agricultural PDFs to enable RAG.")
+            print("⚠️  No PDFs found in docs/ folder.")
             return Chroma(
                 persist_directory=VECTOR_DIR,
                 embedding_function=self.embeddings
             )
 
-        # Split into chunks
         splitter = RecursiveCharacterTextSplitter(
             chunk_size=800,
             chunk_overlap=100,
@@ -69,7 +65,6 @@ class RAGPipeline:
         chunks = splitter.split_documents(documents)
         print(f"📄 Loaded {len(documents)} documents → {len(chunks)} chunks")
 
-        # Build and persist vectorstore
         vectorstore = Chroma.from_documents(
             documents=chunks,
             embedding=self.embeddings,
@@ -80,10 +75,7 @@ class RAGPipeline:
         return vectorstore
 
     def retrieve(self, query: str, k: int = TOP_K) -> str:
-        """
-        Retrieve top-k relevant chunks for a given query.
-        Returns a single formatted string to inject into the LLM prompt.
-        """
+        """Retrieve top-k relevant chunks for a given query."""
         docs = self.vectorstore.similarity_search(query, k=k)
 
         if not docs:
