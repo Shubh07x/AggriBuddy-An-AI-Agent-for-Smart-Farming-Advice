@@ -86,12 +86,6 @@ Farmer asks a question (Hindi / Marathi / English)
 
 ## 📸 Screenshots
 
-### Setting Up the Agent
-![Setting Up](msetting%20up.png)
-
-### Agent Instructions
-![Agent Instructions](agent_instruction.png)
-
 ### Tools & Testing
 ![Tools Testing](otool_testing.png)
 
@@ -100,6 +94,12 @@ Farmer asks a question (Hindi / Marathi / English)
 
 ### API References
 ![API](API.png)
+
+### Setting Up the Agent
+![Setting Up](msetting%20up.png)
+
+### Agent Instructions
+![Agent Instructions](agent_instruction.png)
 
 ---
 
