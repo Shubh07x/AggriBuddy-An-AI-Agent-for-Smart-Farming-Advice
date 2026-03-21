@@ -1,0 +1,24 @@
+# ── IBM Watsonx ─────────────────────────────
+ibm-watsonx-ai==1.1.2
+ibm-cloud-sdk-core==3.18.0
+
+# ── RAG & Vector Store ───────────────────────
+langchain==0.2.6
+langchain-community==0.2.6
+chromadb==0.5.3
+sentence-transformers==3.0.1
+
+# ── Document Loaders ─────────────────────────
+pypdf==4.2.0
+python-docx==1.1.2
+
+# ── Streamlit UI ─────────────────────────────
+streamlit==1.36.0
+
+# ── Utilities ────────────────────────────────
+python-dotenv==1.0.1
+requests==2.32.3
+
+# ── Testing ──────────────────────────────────
+pytest==8.2.2
+pytest-mock==3.14.0
