@@ -3,7 +3,7 @@
 # 🌾 AggriBuddy
 ### An AI Agent for Smart Farming Advice
 
-**AI-powered farming assistant using IBM Watsonx + RAG that delivers real-time, localized crop advice, pest alerts & mandi prices in regional languages — built for India's 100 million small & marginal farmers.**
+**AI-powered farming assistant using IBM Watsonx + RAG that delivers real-time, localized crop advice, pest alerts & mandi prices in regional languages — built for India's small & marginal farmers.**
 
 <br/>
 
